@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/gas_station_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Gas station name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/fuel_type_name_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fuel_type_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="fuel type"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/fuel_type_display"
+        app:layout_constraintTop_toBottomOf="@+id/gas_station_name_text" />
+
+    <TextView
+        android:id="@+id/carbon_footprint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Carbon footprint"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/carbon_footprint_display"
+        app:layout_constraintTop_toBottomOf="@+id/fuel_type_name_text" />
+
+    <TextView
+        android:id="@+id/fuel_cost_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Fuel Cost"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/fuel_cost_display"
+        app:layout_constraintTop_toBottomOf="@+id/carbon_footprint_text" />
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="yyyy/MM/dd"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/price_display"
+        app:layout_constraintTop_toBottomOf="@+id/fuel_cost_text" />
+
+    <TextView
+        android:id="@+id/fuel_type_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Fuel Type:"
+        android:textColor="#3F51B5"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gas_station_name_text" />
+
+    <TextView
+        android:id="@+id/carbon_footprint_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Carbon footprint:"
+        android:textColor="#3F51B5"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuel_type_display" />
+
+    <TextView
+        android:id="@+id/fuel_cost_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Fuel Cost:"
+        android:textColor="#3F51B5"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carbon_footprint_display" />
+
+    <TextView
+        android:id="@+id/price_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Date:"
+        android:textColor="#3F51B5"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuel_cost_display" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

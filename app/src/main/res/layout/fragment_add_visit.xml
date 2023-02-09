@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_text_gas_station_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter gas station name or Description"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/edit_text_fuel_type_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Fuel type: Gasoline/Diesel"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/edit_text_amount_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Amount in litres (integer please!)"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/edit_text_price_per_litre_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Price per litre in dollars"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/edit_text_date_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Date in yyyy-mm-dd format"
+        android:inputType="date|text" />
+
+</LinearLayout>
